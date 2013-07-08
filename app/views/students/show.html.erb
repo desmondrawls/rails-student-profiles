@@ -1,2 +1,14 @@
-<h1>Students#show</h1>
-<p>Find me in app/views/students/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+<h1> <%= @student.name %> </h1>
+<ul>
+  <li> Quote: <%= @student.quote %> </li>
+  <li> Bio: <%= @student.bio %> </li>
+  <li> Twitter: <%= @student.twitter %> </li>
+  <li> LinkedIn: <%= @student.linkedin %> </li>
+  <li> GitHub: <%= @student.bio %> </li>
+  <li> Education: <%= @student.twitter %> </li>
+  <li> Work: <%= @student.work %> </li>
+</ul>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
